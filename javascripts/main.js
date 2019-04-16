@@ -1,7 +1,10 @@
-import bread from './helpers/breadItems.js';
+import cart from './components/cart.js';
+
+import events from './helpers/buttonEvents.js';
 
 const init = () => {
-  console.log(bread);
+  document.getElementById('make-sandwich').addEventListener('click', cart.makeSandwich);
+  events.attachEvents();
 };
 
 init();
